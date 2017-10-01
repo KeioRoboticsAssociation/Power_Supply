@@ -1,0 +1,386 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Power_Supply-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L NCP1117ST33T3G U2
+U 1 1 5949DE12
+P 5200 4350
+F 0 "U2" H 5200 4600 50  0000 C CNN
+F 1 "NCP1117ST33T3G" H 5200 4550 50  0000 C CNN
+F 2 "mylib:OldSowjetaera_Transistor_Type-I_SmallPads" H 5200 4350 50  0001 C CNN
+F 3 "" H 5200 4350 50  0000 C CNN
+	1    5200 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L OKL-T/6-W12 U1
+U 1 1 5949E134
+P 5200 2250
+F 0 "U1" H 5200 2850 60  0000 C CNN
+F 1 "OKL-T/6-W12" H 5200 2750 60  0000 C CNN
+F 2 "mylib:DCDC-murata-6A" H 5200 2250 60  0001 C CNN
+F 3 "" H 5200 2250 60  0000 C CNN
+	1    5200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 5949E17E
+P 1800 1850
+F 0 "P1" H 1800 2000 50  0000 C CNN
+F 1 "CONN_01X02" V 1900 1850 50  0000 C CNN
+F 2 "mylib:XT60" H 1800 1850 50  0001 C CNN
+F 3 "" H 1800 1850 50  0000 C CNN
+	1    1800 1850
+	-1   0    0    1   
+$EndComp
+Text GLabel 2000 1800 2    60   Output ~ 0
+V12
+Text GLabel 2000 1900 2    60   Output ~ 0
+GND
+Text GLabel 3800 1900 0    60   Output ~ 0
+V12
+Text GLabel 3800 4300 0    60   Output ~ 0
+V12
+Text GLabel 3800 3600 0    60   Output ~ 0
+GND
+Text GLabel 3800 4700 0    60   Output ~ 0
+GND
+Text GLabel 6900 1900 2    60   Output ~ 0
+V5
+Text GLabel 6900 4300 2    60   Output ~ 0
+V3.3
+Text GLabel 6900 3600 2    60   Output ~ 0
+GND
+Text GLabel 6900 4700 2    60   Output ~ 0
+GND
+$Comp
+L C C4
+U 1 1 594E092C
+P 6400 2350
+F 0 "C4" H 6425 2450 50  0000 L CNN
+F 1 "10uF" H 6425 2250 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D5.0mm_P2.00mm" H 6438 2200 50  0001 C CNN
+F 3 "" H 6400 2350 50  0000 C CNN
+	1    6400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 594E0965
+P 4100 2350
+F 0 "C1" H 4125 2450 50  0000 L CNN
+F 1 "22uF" H 4125 2250 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D5.0mm_P2.00mm" H 4138 2200 50  0001 C CNN
+F 3 "" H 4100 2350 50  0000 C CNN
+	1    4100 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 594E09A3
+P 6000 2550
+F 0 "R1" V 6080 2550 50  0000 C CNN
+F 1 "1k" V 6000 2550 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5930 2550 50  0001 C CNN
+F 3 "" H 6000 2550 50  0000 C CNN
+	1    6000 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 594E09E0
+P 5700 4450
+F 0 "C3" H 5725 4550 50  0000 L CNN
+F 1 "33uF" H 5725 4350 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D5.0mm_P2.00mm" H 5738 4300 50  0001 C CNN
+F 3 "" H 5700 4450 50  0000 C CNN
+	1    5700 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 594E0A2B
+P 4700 4450
+F 0 "C2" H 4725 4550 50  0000 L CNN
+F 1 "0.33uF" H 4725 4350 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4738 4300 50  0001 C CNN
+F 3 "" H 4700 4450 50  0000 C CNN
+	1    4700 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P3
+U 1 1 594E0DB8
+P 9000 1950
+F 0 "P3" H 9000 2100 50  0000 C CNN
+F 1 "CONN_01X02" V 9100 1950 50  0000 C CNN
+F 2 "Connect:BARREL_JACK" H 9000 1950 50  0001 C CNN
+F 3 "" H 9000 1950 50  0000 C CNN
+	1    9000 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P6
+U 1 1 594E0DF4
+P 9000 3950
+F 0 "P6" H 9000 4100 50  0000 C CNN
+F 1 "CONN_01X02" V 9100 3950 50  0000 C CNN
+F 2 "Connect:BARREL_JACK" H 9000 3950 50  0001 C CNN
+F 3 "" H 9000 3950 50  0000 C CNN
+	1    9000 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 594E0E47
+P 9000 4550
+F 0 "P2" H 9000 4700 50  0000 C CNN
+F 1 "CONN_01X02" V 9100 4550 50  0000 C CNN
+F 2 "Connect:BARREL_JACK" H 9000 4550 50  0001 C CNN
+F 3 "" H 9000 4550 50  0000 C CNN
+	1    9000 4550
+	1    0    0    -1  
+$EndComp
+Text GLabel 8800 1900 0    60   Output ~ 0
+V5
+Text GLabel 8800 2000 0    60   Output ~ 0
+GND
+Text GLabel 8800 3900 0    60   Output ~ 0
+V3.3
+Text GLabel 8800 4000 0    60   Output ~ 0
+GND
+Text GLabel 8800 4500 0    60   Output ~ 0
+V12
+Text GLabel 8800 4600 0    60   Output ~ 0
+GND
+$Comp
+L R R2
+U 1 1 59509F7C
+P 6000 2900
+F 0 "R2" V 6080 2900 50  0000 C CNN
+F 1 "330" V 6000 2900 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5930 2900 50  0001 C CNN
+F 3 "" H 6000 2900 50  0000 C CNN
+	1    6000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 59509FB3
+P 6000 3250
+F 0 "R3" V 6080 3250 50  0000 C CNN
+F 1 "10" V 6000 3250 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5930 3250 50  0001 C CNN
+F 3 "" H 6000 3250 50  0000 C CNN
+	1    6000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P4
+U 1 1 5953123A
+P 9000 2550
+F 0 "P4" H 9000 2700 50  0000 C CNN
+F 1 "CONN_01X02" V 9100 2550 50  0000 C CNN
+F 2 "Connect:BARREL_JACK" H 9000 2550 50  0001 C CNN
+F 3 "" H 9000 2550 50  0000 C CNN
+	1    9000 2550
+	1    0    0    -1  
+$EndComp
+Text GLabel 8800 2500 0    60   Output ~ 0
+V5
+Text GLabel 8800 2600 0    60   Output ~ 0
+GND
+$Comp
+L CONN_01X02 P5
+U 1 1 5953126F
+P 9000 3350
+F 0 "P5" H 9000 3500 50  0000 C CNN
+F 1 "CONN_01X02" V 9100 3350 50  0000 C CNN
+F 2 "Connect:BARREL_JACK" H 9000 3350 50  0001 C CNN
+F 3 "" H 9000 3350 50  0000 C CNN
+	1    9000 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 8800 3300 0    60   Output ~ 0
+V3.3
+Text GLabel 8800 3400 0    60   Output ~ 0
+GND
+$Comp
+L CONN_01X02 P7
+U 1 1 5953BC01
+P 9000 5050
+F 0 "P7" H 9000 5200 50  0000 C CNN
+F 1 "CONN_01X02" V 9100 5050 50  0000 C CNN
+F 2 "mylib:XT60" H 9000 5050 50  0001 C CNN
+F 3 "" H 9000 5050 50  0000 C CNN
+	1    9000 5050
+	1    0    0    -1  
+$EndComp
+Text GLabel 8800 5000 0    60   Output ~ 0
+V12
+Text GLabel 8800 5100 0    60   Output ~ 0
+GND
+$Comp
+L R R4
+U 1 1 59545E32
+P 6750 2300
+F 0 "R4" V 6830 2300 50  0000 C CNN
+F 1 "150" V 6750 2300 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6680 2300 50  0001 C CNN
+F 3 "" H 6750 2300 50  0000 C CNN
+	1    6750 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D1
+U 1 1 59545EB7
+P 6750 3150
+F 0 "D1" H 6750 3250 50  0000 C CNN
+F 1 "LED" H 6750 3050 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 6750 3150 50  0001 C CNN
+F 3 "" H 6750 3150 50  0000 C CNN
+	1    6750 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R5
+U 1 1 59546097
+P 6100 4400
+F 0 "R5" V 6180 4400 50  0000 C CNN
+F 1 "51" V 6100 4400 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6030 4400 50  0001 C CNN
+F 3 "" H 6100 4400 50  0000 C CNN
+	1    6100 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 5954609D
+P 6450 4550
+F 0 "D2" H 6450 4650 50  0000 C CNN
+F 1 "LED" H 6450 4450 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 6450 4550 50  0001 C CNN
+F 3 "" H 6450 4550 50  0000 C CNN
+	1    6450 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3800 1900 4500 1900
+Wire Wire Line
+	3800 4300 4800 4300
+Wire Wire Line
+	5900 1900 6900 1900
+Wire Wire Line
+	5600 4300 6900 4300
+Wire Wire Line
+	3800 3600 6900 3600
+Wire Wire Line
+	3800 4700 6900 4700
+Wire Wire Line
+	5200 4600 5200 4700
+Connection ~ 5200 4700
+Wire Wire Line
+	5300 2850 5300 3600
+Connection ~ 5300 3600
+Wire Wire Line
+	5500 2850 5500 3600
+Connection ~ 5500 3600
+Wire Wire Line
+	4500 2100 4300 2100
+Wire Wire Line
+	4300 2100 4300 3600
+Connection ~ 4300 3600
+Connection ~ 6400 1900
+Wire Wire Line
+	6400 2500 6400 3600
+Connection ~ 6400 3600
+Wire Wire Line
+	4100 2500 4100 3600
+Connection ~ 4100 3600
+Wire Wire Line
+	5900 2300 6000 2300
+Wire Wire Line
+	6000 2300 6000 2400
+Wire Wire Line
+	6000 3400 6000 3600
+Connection ~ 6000 3600
+Wire Wire Line
+	5900 2100 6400 2100
+Connection ~ 6400 2100
+Wire Wire Line
+	4700 4600 4700 4700
+Connection ~ 4700 4700
+Wire Wire Line
+	5700 4600 5700 4700
+Connection ~ 5700 4700
+Wire Wire Line
+	6000 2700 6000 2750
+Wire Wire Line
+	6000 3050 6000 3100
+Connection ~ 4700 4300
+Connection ~ 5700 4300
+Wire Wire Line
+	6750 2450 6750 2950
+Wire Wire Line
+	4100 1900 4100 2200
+Wire Wire Line
+	6400 1900 6400 2200
+Connection ~ 4100 1900
+Wire Wire Line
+	5950 4300 5950 4400
+Connection ~ 5950 4300
+Wire Wire Line
+	6250 4400 6250 4550
+Wire Wire Line
+	6650 4550 6650 4700
+Connection ~ 6650 4700
+Wire Wire Line
+	6750 1900 6750 2150
+Connection ~ 6750 1900
+Wire Wire Line
+	6750 3350 6750 3600
+Connection ~ 6750 3600
+$EndSCHEMATC
